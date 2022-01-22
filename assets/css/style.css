@@ -7,7 +7,10 @@ body   {
 }
 
 /* Navbar */
-
+.logo{
+    width: 5%;
+    margin-bottom: 6pt;
+}
 
 
 /* Carrusel */
@@ -31,6 +34,17 @@ body   {
 .card-img-top{
     height: 150px;
 }
+.iconbg{
+    background-color:#0dcaf0;
+    width: 400px;
+    height: 40px;
+
+}
+/* contacto */
+.form-label{
+    color: white;
+}
+
 /* footer */
 #footer{
     background-color:#0dcaf0 ;
@@ -38,6 +52,7 @@ body   {
 
 .fa-brands{
     color: white;
+    
 }
 
 /*-------*/

@@ -27,7 +27,7 @@
     <Section id="navbar" class="header">
         <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
-              <a class="navbar-brand" href="#">Viajes Chile</a>
+              <a class="navbar-brand" href="#"><img src="/assets/img/viajes.svg" alt="Logo" class="logo" > Viajes Chile</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -91,7 +91,7 @@
         <div class="row pt-5">
             <article class="col-lg-4">
                 <p class="text-center">
-                    <i class="fas fa-plane fa-2x iconbg"></i>
+                    <i class="fas fa-plane fa-2x iconbg py-1"></i>
                 </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi nihil voluptas iure eum ad facilis error provident numquam impedit! Debitis recusandae et suscipit vero quia, iste in id deserunt, quos ratione explicabo expedita nulla ullam unde. Id necessitatibus deleniti doloribus ad quam? Officiis incidunt quibusdam quisquam eaque quidem ipsum.</p>
             </article>
@@ -99,13 +99,13 @@
             <article class="col-lg-4">                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi nihil voluptas iure eum ad facilis error provident numquam impedit! Debitis recusandae et suscipit vero quia, iste in id deserunt, quos ratione explicabo expedita nulla ullam unde. Id necessitatibus deleniti doloribus ad quam? Officiis incidunt quibusdam quisquam eaque quidem ipsum.</p>
                 <p class="text-center">
-                    <i class="fas fa-mountain fa-2x iconbg"></i>
+                    <i class="fas fa-mountain fa-2x iconbg py-1"></i>
                 </p>
             </article>
 
             <article class="col-lg-4">
                 <p class="text-center">
-                    <i class="fas fa-route fa-2x  iconbg"></i>
+                    <i class="fas fa-route fa-2x  iconbg py-1"></i>
                 </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi nihil voluptas iure eum ad facilis error provident numquam impedit! Debitis recusandae et suscipit vero quia, iste in id deserunt, quos ratione explicabo expedita nulla ullam unde. Id necessitatibus deleniti doloribus ad quam? Officiis incidunt quibusdam quisquam eaque quidem ipsum.</p>
             </article>
@@ -123,9 +123,9 @@
         </div>
         <!--Cards destacados-->
         <div class="container">
-            <div class="row ">
+            <div class="row mx-4">
                 <!--Inicio Card 1-->
-                <article class="col-lg-3 col-sm-12">
+                <article class="col-lg-3 col-sm-12 my-4">
                     <div class="card" style="width: 18rem;">
                         <img src="/assets/img/card1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -137,7 +137,7 @@
                 <!--Fin Card 1-->
     
                 <!--Inicio Card 2-->
-                <article class="col-lg-3 col-sm-12">
+                <article class="col-lg-3 col-sm-12 my-4">
                     <div class="card" style="width: 18rem;">
                         <img src="/assets/img/card2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -149,7 +149,7 @@
                 <!--Fin Card 2-->
     
                 <!--Inicio Card 3-->
-                <article class="col-lg-3 col-sm-12">
+                <article class="col-lg-3 col-sm-12 my-4">
                     <div class="card" style="width: 18rem;">
                         <img src="/assets/img/card3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -161,7 +161,7 @@
                 <!--Fin Card 3-->
     
                 <!--Inicio Card 4-->
-                <article class="col-lg-3 col-sm-12">
+                <article class="col-lg-3 col-sm-12 my-4">
                     <div class="card" style="width: 18rem;">
                         <img src="/assets/img/card4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -189,19 +189,37 @@
         <div class="container">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Introduce tu Nombre">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Introduce tu Nombre" data-bs-toggle="tooltip" data-bs-placement="left" title="Escribe tu Nombre Completo">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Asunto" data-bs-toggle="tooltip" data-bs-placement="left" title="Cual es tu objetivo">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" data-bs-toggle="tooltip" data-bs-placement="left" title="Describe lo que te intersa o te gustaria saber mas en detalle"></textarea>
               </div>
               <div>
-                <button type="enviar" class="btn btn-primary mb-3">Enviar</button>
+                <button id="enviarCorreo" type="enviar" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>                
               </div>
+              <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gracias por contactarnos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        Te escribiremos a la brevedad
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Suscribirte</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
         </div>
     </section>    
 
@@ -212,27 +230,29 @@
         <div class="container">
             <footer>
                 <div class="row">
-                    <article class="col-lg-4 col-sm-4">
+                    <article class="col-lg-6 col-sm-4">
                         <div>
                             <h2 class="my-4 text-center">VIAJES CHILE</h2>
                         </div>
                     </article>
 
                     <!--iconos redes sociales-->
-                    <div class="row">
-                        <article class="col-lg-2 col-sm-2 my-4 text-center ">
-                            <div><i class="fa fa-brands fa-github-square fa-3x"></i></div>
+                        
+                        <article class="col-lg-2 col-sm-2 my-4 text-center" style="width: 66px;">
+                       <a href="https://github.com/"><i class="fa fa-brands fa-github-square fa-3x" ></i></a> 
                         </article>
-                        <article class="col-lg-2 col-sm-2 my-4 text-center ">
-                            <div><i class="fa fa-brands fa-linkedin-square fa-3x"></i></div>
+                        <article class="col-lg-2 col-sm-2 my-4 text-center " style="width: 66px;">
+                         <a href="https://cl.linkedin.com/"><i  class="fa fa-brands fa-linkedin-square fa-3x"></i></a>   
                         </article>
-                        <article class="col-lg-2 col-sm-2 my-4 text-center ">
-                            <div><i class="fa fa-brands fa-twitter-square fa-3x"></i></div>
+                        <article class="col-lg-2 col-sm-2 my-4 text-center " style="width: 66px;">
+                         <a href="#https://twitter.com/?lang=es"><i  class="fa fa-brands fa-twitter-square fa-3x"></i></a>   
                         </article>
-                        <article class="col-lg-2 col-sm-2 my-4 text-center ">
-                            <div><i class="fa fa-brands fa-facebook-square fa-3x"></i></div>
+                        <article class="col-lg-2 col-sm-2 my-4 text-center " style="width: 66px;">
+                        <a href="#https://es-la.facebook.com/"><i  class="fa fa-brands fa-facebook-square fa-3x"></i></a>  
                         </article>
-                    </div>
+                   
+                        
+                    
                   
 
                 </div>
@@ -265,15 +285,15 @@
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    
+    
   </body>
 </html>
