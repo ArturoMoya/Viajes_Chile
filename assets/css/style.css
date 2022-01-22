@@ -1,0 +1,51 @@
+body   {
+    margin: 0;
+    padding: 0;
+    border: 0 ;
+    font-family: 'Raleway', sans-serif;
+    background-color: black ;
+}
+
+/* Navbar */
+
+
+
+/* Carrusel */
+
+
+
+
+/* Quienes Somos */
+
+
+
+
+/* Destacados */
+
+.card-body{
+    background-color: #0dcaf0;
+}
+.card-title{
+    color: white;
+}
+.card-img-top{
+    height: 150px;
+}
+/* footer */
+#footer{
+    background-color:#0dcaf0 ;
+}
+
+.fa-brands{
+    color: white;
+}
+
+/*-------*/
+
+h2{
+    color: white;
+}
+
+p{
+    color:  white;
+}
